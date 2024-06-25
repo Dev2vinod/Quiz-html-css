@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qzi App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+     <a href="./test.html">test par jao</a>
+    <h2 class="text-center" ondrop="true"  draggable="true">hell ji come back</h2>
+
+     <div class="bg-pink-400 ml-3 p-2 max-w-[70%] mx-auto">
+        <div class="flex justify-between items-center">
+
+            <p id="questionNumber" class="text-3xl"></p>
+            <span id="timer" class="text-2xl bg-purple-600" dropzone="move"> </span>
+        </div>
+            <h2 id="question"></h2>
+        <div >
+            <label for="option1" >
+                <input type="radio" name="answer" value="1" onclick="enabledBtn()">
+                <span id="option1"></span>
+
+            </label>
+        </div>
+        <div >
+            <input type="radio" name="answer" value="2" onclick="enabledBtn()">
+            <label for="option2" >
+                <span id="option2"></span>
+
+
+            </label>
+        </div>
+        <div >
+            <input type="radio" name="answer" value="3" onclick="enabledBtn()">
+            <label for="option3"  ><span id="option3"></span></label>
+        </div>
+        <div >
+            <label for="option4" >
+                <input type="radio" name="answer" value="4" onclick="enabledBtn()">
+                <span id="option4"></span>
+
+            </label>
+        </div>
+       
+    
+
+        <button class="bg-blue-600 text-white hover:bg-blue-400 px-5 m-2" onclick="nextBtn()" disabled id="nextBtnid">Next</button>
+        <button class="bg-green-600 text-white hover:bg-green-400 px-5 m-2" onclick="perBtn()" id="perBtn" >Previous</button>
+
+    </div>
+
+    <div id="info" class="bg-green-300">
+
+ 
+    </div>
+
+    <div>
+        <div>
+            <input type="radio" name="group1" id="r1" value="1" />
+            <label for="r1"> button one</label>
+
+        </div>
+        <div>
+            <input type="radio" name="group1" id="r2" value="2" />
+            <label for="r2"> button two</label>
+
+        </div>
+        <div>
+            <input type="radio" name="group1" id="r3" value="3" />
+            <label for="r3"> button three</label>
+
+        </div>
+    </div>
+        
+   <script src="Qzip.js"></script>
+</body>
+</html>
